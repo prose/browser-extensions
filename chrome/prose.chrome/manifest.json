@@ -1,0 +1,13 @@
+{
+  "name": "prose",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["prose.css"],
+      "js": ["prose.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
