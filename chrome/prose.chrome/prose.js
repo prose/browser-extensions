@@ -2,6 +2,17 @@ redraw();
 document.addEventListener('DOMSubtreeModified', redraw);
 
 function redraw() {
+  var parts = location.pathname.substring(1).split('/');
+  var user = parts[0];
+  var repo = parts[1];
+  var branch = parts[3];
+  var path = parts.slice(4).join('/');
+
+  if (!user || !/^[a-z0-9][a-z0-9]*$/.test(user)) return;
+
+  // Sha Test
+  if (/^[0-9a-f]{40}$/.test(branch)) return;
+
   var root = document.querySelector('.actions');
   if (!root) return;
 
@@ -22,12 +33,5 @@ function redraw() {
     group.insertBefore(link, group.firstChild);
   }
 
-  var parts = location.pathname.substring(1).split('/'),
-      user = parts[0],
-      repo = parts[1],
-      branch = parts[3],
-      path = parts.slice(4).join('/');
-
-  if (!user || !/^[a-z0-9][a-z0-9]*$/.test(user)) return;
   a.href = 'http://prose.io/#' + user + '/' + repo + '/edit/' + branch + '/' + path;
 }
