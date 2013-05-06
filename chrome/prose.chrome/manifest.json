@@ -1,7 +1,13 @@
 {
   "name": "prose",
+  "description": "Provides an Edit in Prose link from a hosted file on GitHub.",
   "version": "1.0.0",
   "manifest_version": 2,
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
