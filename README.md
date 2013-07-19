@@ -1,6 +1,6 @@
 # Chrome Extension: Edit in Prose
 
-![](http://cl.ly/OkjE/screenshot_2013-05-04Screen%20Shot%202013-05-04%20at%205.49.48%20PM.png)
+![](https://lh3.googleusercontent.com/Dqm3131QZSOH-PPnU9LWSSBaOzFYiF8cIWYT0S6Sl3mh1kKzDzFe4hobb4U8GByUMeyKmqh2=s640-h400-e365-rw)
 
 Enabling this extension provides an _Edit in Prose_ link from a hosted file on
 GitHub.
