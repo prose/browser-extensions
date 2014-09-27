@@ -8,4 +8,5 @@ GitHub.
 ### Installation 
 
 Download it from the chrome webstore:  https://chrome.google.com/webstore/detail/prose/onippmookoohgjgccejcjmlpoohbjgjn
+
 Download it from AMO:  https://addons.mozilla.org/en-US/firefox/addon/prose/
