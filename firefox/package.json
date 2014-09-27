@@ -1,0 +1,13 @@
+{
+  "name": "prose",
+  "title": "prose",
+  "id": "{c515e2d0-4663-11e4-916c-0800200c9a66}",
+  "description": "Provides an Edit in Prose link from a hosted file on GitHub.",
+  "author": "Alexander Salas",
+  "homepage": "http://prose.io",
+  "license": "MPL 2.0",
+  "version": "0.1",
+	"permissions": {
+		"cross-domain-content": ["https://api.github.com/", "http://prose.io/", "https://github.com/", "https://prose-gatekeeper.herokuapp.com/"]
+	}
+}
