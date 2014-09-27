@@ -3,24 +3,24 @@ Mozilla Public License Version 2.0
 
 ### 1. Definitions
 
-**1.1. ìContributorî**  
+**1.1. ‚ÄúContributor‚Äù**  
     means each individual or legal entity that creates, contributes to
     the creation of, or owns Covered Software.
 
-**1.2. ìContributor Versionî**  
+**1.2. ‚ÄúContributor Version‚Äù**  
     means the combination of the Contributions of others (if any) used
     by a Contributor and that particular Contributor's Contribution.
 
-**1.3. ìContributionî**  
+**1.3. ‚ÄúContribution‚Äù**  
     means Covered Software of a particular Contributor.
 
-**1.4. ìCovered Softwareî**  
+**1.4. ‚ÄúCovered Software‚Äù**  
     means Source Code Form to which the initial Contributor has attached
     the notice in Exhibit A, the Executable Form of such Source Code
     Form, and Modifications of such Source Code Form, in each case
     including portions thereof.
 
-**1.5. ìIncompatible With Secondary Licensesî**  
+**1.5. ‚ÄúIncompatible With Secondary Licenses‚Äù**  
     means
 
 * **(a)** that the initial Contributor has attached the notice described
@@ -29,22 +29,22 @@ Mozilla Public License Version 2.0
     version 1.1 or earlier of the License, but not also under the
     terms of a Secondary License.
 
-**1.6. ìExecutable Formî**  
+**1.6. ‚ÄúExecutable Form‚Äù**  
     means any form of the work other than Source Code Form.
 
-**1.7. ìLarger Workî**  
+**1.7. ‚ÄúLarger Work‚Äù**  
     means a work that combines Covered Software with other material, in 
     a separate file or files, that is not Covered Software.
 
-**1.8. ìLicenseî**  
+**1.8. ‚ÄúLicense‚Äù**  
     means this document.
 
-**1.9. ìLicensableî**  
+**1.9. ‚ÄúLicensable‚Äù**  
     means having the right to grant, to the maximum extent possible,
     whether at the time of the initial grant or subsequently, any and
     all of the rights conveyed by this License.
 
-**1.10. ìModificationsî**  
+**1.10. ‚ÄúModifications‚Äù**  
     means any of the following:
 
 * **(a)** any file in Source Code Form that results from an addition to,
@@ -53,7 +53,7 @@ Mozilla Public License Version 2.0
 * **(b)** any new file in Source Code Form that contains any Covered
     Software.
 
-**1.11. ìPatent Claimsî of a Contributor**  
+**1.11. ‚ÄúPatent Claims‚Äù of a Contributor**  
     means any patent claim(s), including without limitation, method,
     process, and apparatus claims, in any patent Licensable by such
     Contributor that would be infringed, but for the grant of the
@@ -61,20 +61,20 @@ Mozilla Public License Version 2.0
     made, import, or transfer of either its Contributions or its
     Contributor Version.
 
-**1.12. ìSecondary Licenseî**  
+**1.12. ‚ÄúSecondary License‚Äù**  
     means either the GNU General Public License, Version 2.0, the GNU
     Lesser General Public License, Version 2.1, the GNU Affero General
     Public License, Version 3.0, or any later versions of those
     licenses.
 
-**1.13. ìSource Code Formî**  
+**1.13. ‚ÄúSource Code Form‚Äù**  
     means the form of the work preferred for making modifications.
 
-**1.14. ìYouî (or ìYourî)**  
+**1.14. ‚ÄúYou‚Äù (or ‚ÄúYour‚Äù)**  
     means an individual or a legal entity exercising rights under this
-    License. For legal entities, ìYouî includes any entity that
+    License. For legal entities, ‚ÄúYou‚Äù includes any entity that
     controls, is controlled by, or is under common control with You. For
-    purposes of this definition, ìcontrolî means **(a)** the power, direct
+    purposes of this definition, ‚Äúcontrol‚Äù means **(a)** the power, direct
     or indirect, to cause the direction or management of such entity,
     whether by contract or otherwise, or **(b)** ownership of more than
     fifty percent (50%) of the outstanding shares or beneficial
@@ -255,7 +255,7 @@ prior to termination shall survive termination.
 
 ### 6. Disclaimer of Warranty
 
-> Covered Software is provided under this License on an ìas isî
+> Covered Software is provided under this License on an ‚Äúas is‚Äù
 > basis, without warranty of any kind, either expressed, implied, or
 > statutory, including, without limitation, warranties that the
 > Covered Software is free of defects, merchantable, fit for a
@@ -349,7 +349,7 @@ for such a notice.
 
 You may add additional accurate notices of copyright ownership.
 
-## Exhibit B - ìIncompatible With Secondary Licensesî Notice
+## Exhibit B - ‚ÄúIncompatible With Secondary Licenses‚Äù Notice
 
     This Source Code Form is "Incompatible With Secondary Licenses", as
     defined by the Mozilla Public License, v. 2.0.
