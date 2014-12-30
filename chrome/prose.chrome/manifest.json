@@ -1,6 +1,6 @@
 {
   "name": "prose",
-  "description": "Provides an Edit in Prose link from a hosted file on GitHub.",
+  "description": "Provides an \"Edit in prose\" link from a hosted file on GitHub.",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {

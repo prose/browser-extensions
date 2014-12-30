@@ -28,7 +28,7 @@
     if (!a) {
       var link = document.createElement('a');
       link.id = 'prose';
-      link.innerHTML = '<span class="prose-icon"></span>Edit in Prose';
+      link.innerHTML = '<span class="prose-icon"></span>Edit in prose';
       link.className = 'minibutton';
       a = link.firstChild;
       group.insertBefore(link, group.firstChild);
