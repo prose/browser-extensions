@@ -17,7 +17,7 @@
     var root = document.querySelector('.actions');
     if (!root) return;
 
-    var group = document.querySelector('.button-group');
+    var group = document.querySelector('.actions > .button-group');
     if (!group) {
       group = document.createElement('div');
       div.className = 'button-group';
