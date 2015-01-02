@@ -1,8 +1,8 @@
-## Browser Extensions: Edit in Prose
+## Browser Extensions: Edit in prose
 
 ![](https://addons.cdn.mozilla.net/user-media/previews/full/144/144050.png)
 
-Enabling this extension provides an _Edit in Prose_ link from a hosted file on
+Enabling this extension provides an _Edit in prose_ link from a hosted file on
 GitHub.
 
 ### Installation 
