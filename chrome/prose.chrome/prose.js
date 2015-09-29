@@ -9,7 +9,7 @@
     var branch = parts[3];
     var path = parts.slice(4).join('/');
 
-    if (!user || !/^[a-z0-9][a-z0-9]*$/i.test(user)) return;
+    if (!user || !/^\w[\w-]+$/.test(user)) return;
 
     // Sha Test
     if (/^[0-9a-f]{40}$/.test(branch)) return;
