@@ -9,18 +9,18 @@
     var branch = parts[3];
     var path = parts.slice(4).join('/');
 
-    if (!user || !/^[a-z0-9][a-z0-9]*$/i.test(user)) return;
+    if (!user || !/^\w[\w-]+$/.test(user)) return;
 
     // Sha Test
     if (/^[0-9a-f]{40}$/.test(branch)) return;
 
-    var root = document.querySelector('.actions');
+    var root = document.querySelector('.file-actions');
     if (!root) return;
 
-    var group = document.querySelector('.actions > .button-group');
+    var group = document.querySelector('.file-actions > .btn-group');
     if (!group) {
       group = document.createElement('div');
-      div.className = 'button-group';
+      div.className = 'btn-group';
       root.appendChild(group);
     }
 
@@ -29,7 +29,7 @@
       var link = document.createElement('a');
       link.id = 'prose';
       link.innerHTML = '<span class="prose-icon"></span>Edit in prose';
-      link.className = 'minibutton';
+      link.className = 'btn btn-sm ';
       a = link.firstChild;
       group.insertBefore(link, group.firstChild);
     }
