@@ -14,13 +14,13 @@
     // Sha Test
     if (/^[0-9a-f]{40}$/.test(branch)) return;
 
-    var root = document.querySelector('.actions');
+    var root = document.querySelector('.file-actions');
     if (!root) return;
 
-    var group = document.querySelector('.actions > .button-group');
+    var group = document.querySelector('.file-actions > .BtnGroup');
     if (!group) {
       group = document.createElement('div');
-      div.className = 'button-group';
+      div.className = 'BtnGroup';
       root.appendChild(group);
     }
 
@@ -29,7 +29,7 @@
       var link = document.createElement('a');
       link.id = 'prose';
       link.innerHTML = '<span class="prose-icon"></span>Edit in prose';
-      link.className = 'minibutton';
+      link.className = 'btn btn-sm BtnGroup-item';
       a = link.firstChild;
       group.insertBefore(link, group.firstChild);
     }
