@@ -17,10 +17,10 @@
     var root = document.querySelector('.file-actions');
     if (!root) return;
 
-    var group = document.querySelector('.file-actions > .btn-group');
+    var group = document.querySelector('.file-actions > .BtnGroup');
     if (!group) {
       group = document.createElement('div');
-      div.className = 'btn-group';
+      div.className = 'BtnGroup';
       root.appendChild(group);
     }
 
@@ -29,7 +29,7 @@
       var link = document.createElement('a');
       link.id = 'prose';
       link.innerHTML = '<span class="prose-icon"></span>Edit in prose';
-      link.className = 'btn btn-sm ';
+      link.className = 'btn btn-sm BtnGroup-item';
       a = link.firstChild;
       group.insertBefore(link, group.firstChild);
     }
