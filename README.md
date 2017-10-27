@@ -1,12 +1,10 @@
-## Browser Extensions: Edit in prose
+# Browser extension for Prose
 
-![](https://addons.cdn.mozilla.net/user-media/previews/full/144/144050.png)
+![Screenshot](docs/screenshot.png)
 
-Enabling this extension provides an _Edit in prose_ link from a hosted file on
-GitHub.
+Enabling this extension provides an _Edit in Prose_ link from a hosted file on GitHub.
 
-### Installation 
+## Installation
 
-Download it from the chrome webstore:  https://chrome.google.com/webstore/detail/prose/onippmookoohgjgccejcjmlpoohbjgjn
-
-Download it from AMO:  https://addons.mozilla.org/en-US/firefox/addon/prose/
+- Chrome: download it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/prose/onippmookoohgjgccejcjmlpoohbjgjn)
+- Firefox: download it from [AMO](https://addons.mozilla.org/en-US/firefox/addon/prose/)
