@@ -1,8 +1,10 @@
 {
-  "name": "prose",
-  "description": "Provides an \"Edit in prose\" link from a hosted file on GitHub.",
-  "version": "1.0.3",
+  "name": "Edit in Prose",
+  "description": "Provides an \"Edit in Prose\" link from a hosted file on GitHub.",
+  "version": "1.0.4",
   "manifest_version": 2,
+  "author": "Tristen Brown",
+  "homepage_url": "http://prose.io",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
