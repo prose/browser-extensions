@@ -1,6 +1,6 @@
 # Browser extension for Prose
 
-![Screenshot](docs/screenshot.png)
+![Screenshot](docs/screenshot-1280x800.png)
 
 Enabling this extension provides an _Edit in Prose_ link from a hosted file on GitHub.
 
