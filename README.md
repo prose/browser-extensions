@@ -1,4 +1,4 @@
-# ![Prose logo](src/icon48.png "Prose logo") _Edit in Prose_: browser extension for [Prose](http://prose.io)
+# ![Prose logo](src/icon48.png "Prose logo") Edit in Prose: browser extension for [Prose](http://prose.io)
 
 > Enabling this extension provides an _Edit in Prose_ link from a hosted file on GitHub.
 
