@@ -1,8 +1,8 @@
-# Browser extension for Prose
+# ![Prose logo](src/icon48.png "Prose logo") _Edit in Prose_: browser extension for [Prose](http://prose.io)
+
+> Enabling this extension provides an _Edit in Prose_ link from a hosted file on GitHub.
 
 ![Screenshot](docs/screenshot-1280x800.png)
-
-Enabling this extension provides an _Edit in Prose_ link from a hosted file on GitHub.
 
 ## Installation
 
