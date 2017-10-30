@@ -1,7 +1,7 @@
 {
   "name": "Edit in Prose",
   "description": "Provides an \"Edit in Prose\" link from a hosted file on GitHub.",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "manifest_version": 2,
   "author": "Tristen Brown",
   "homepage_url": "http://prose.io",
@@ -17,5 +17,11 @@
       "js": ["prose.js"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "{c515e2d0-4663-11e4-916c-0800200c9a66}",
+      "strict_min_version": "53.0"
+    }
+  }
 }
