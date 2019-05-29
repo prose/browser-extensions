@@ -1,6 +1,6 @@
 {
   "name": "Edit-in-Prose",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Provides an \"Edit in Prose\" link from a hosted file on GitHub.",
   "homepage": "https://github.com/prose/browser-extensions/",
   "license": "BSD-3-Clause",
