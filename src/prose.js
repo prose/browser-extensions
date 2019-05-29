@@ -23,7 +23,7 @@
     if (!root) {
       return;
     }
-    const group = document.querySelector(rootClass+' .BtnGroup');
+    const group = document.querySelector(rootClass + ' .BtnGroup');
     if (!group) {
       const group = document.createElement('div');
       group.className = 'BtnGroup';
