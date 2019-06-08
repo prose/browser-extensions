@@ -14,11 +14,28 @@
       return;
     }
 
+    // Nav button
+    if (repo) {
+      const nav = document.querySelector('.hx_reponav');
+      let button = document.querySelector('#prose');
+      if (!button) {
+        const link = document.createElement('a');
+        link.id = 'prose';
+        link.innerHTML = '<span class="prose-icon"></span>Prose';
+        link.title = 'Open in Prose';
+        link.className = 'js-selected-navigation-item reponav-item';
+        link.rel = 'nofollow';
+        nav.appendChild(link);
+        link.href = 'http://prose.io/#' + user + '/' + repo + '/';
+      }
+    }
+
     // Sha Test
     if (/^[0-9a-f]{40}$/.test(branch)) {
       return;
     }
 
+    // Edit button
     const root = document.querySelector(rootClass);
     if (!root) {
       return;
@@ -29,19 +46,17 @@
       group.className = 'BtnGroup';
       root.appendChild(group);
     }
-
-    let a = document.querySelector('#prose');
-    if (!a) {
+    let edit = document.querySelector('#prose-edit');
+    if (!edit) {
       const link = document.createElement('a');
-      link.id = 'prose';
+      link.id = 'prose-edit';
       link.innerHTML = '<span class="prose-icon"></span>Edit in Prose';
       link.className = 'btn btn-sm BtnGroup-item tooltipped tooltipped-n rgh-md-source';
       link.rel = 'nofollow';
       link.setAttribute('aria-label', 'Open file in Prose.io');
-      a = link.firstChild;
+      edit = link.firstChild;
       group.insertBefore(link, group.firstChild);
     }
-
-    a.href = 'http://prose.io/#' + user + '/' + repo + '/edit/' + branch + '/' + path;
+    edit.href = 'http://prose.io/#' + user + '/' + repo + '/edit/' + branch + '/' + path;
   }
 })();
