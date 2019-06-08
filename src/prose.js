@@ -17,7 +17,7 @@
     // Nav button
     if (repo) {
       const nav = document.querySelector('.hx_reponav');
-      let button = document.querySelector('#prose');
+      const button = document.querySelector('#prose');
       if (!button) {
         const link = document.createElement('a');
         link.id = 'prose';
