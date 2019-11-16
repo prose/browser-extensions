@@ -9,29 +9,43 @@
     const repo = parts[1];
     const branch = parts[3];
     const path = parts.slice(4).join('/');
+    const configFilePath = 'https://github.com/' + user + '/' + repo + '/blob/master/_prose.yml';
 
+    // User test
     if (!user || !/^\w[\w-]+$/.test(user)) {
       return;
     }
 
-    // Nav button
-    if (repo) {
-      const nav = document.querySelector('.hx_reponav');
-      const button = document.querySelector('#prose');
-      if (!button) {
-        const link = document.createElement('a');
-        link.id = 'prose';
-        link.innerHTML = '<span class="prose-icon"></span>Prose';
-        link.title = 'Open in Prose';
-        link.className = 'js-selected-navigation-item reponav-item';
-        link.rel = 'nofollow';
-        nav.appendChild(link);
-        link.href = 'http://prose.io/#' + user + '/' + repo + '/';
+    // Prose config file test
+    fetch(configFilePath).then(function (response) {
+      if (response.ok) {
+        // Display nav button
+        const nav = document.querySelector('.hx_reponav');
+        const button = document.querySelector('#prose');
+        if (!button) {
+          const link = document.createElement('a');
+          link.id = 'prose';
+          link.innerHTML = '<span class="prose-icon"></span>Prose';
+          link.title = 'Open in Prose';
+          link.className = 'js-selected-navigation-item reponav-item';
+          link.rel = 'nofollow';
+          nav.appendChild(link);
+          link.href = 'https://prose.io/#' + user + '/' + repo + '/';
+        }
+      } else {
+        throw new Error(`Request rejected with status ${response.status}`);
       }
+    }).catch(function (err) {
+      //
+    });
+
+    // Sha test
+    if (/^[0-9a-f]{40}$/.test(branch)) {
+      return;
     }
 
-    // Sha Test
-    if (/^[0-9a-f]{40}$/.test(branch)) {
+    // Markdown file type test
+    if (!/\.markdown|mdown|mkdn|mkd|md$/i.test(path)) {
       return;
     }
 
@@ -57,6 +71,6 @@
       edit = link.firstChild;
       group.insertBefore(link, group.firstChild);
     }
-    edit.href = 'http://prose.io/#' + user + '/' + repo + '/edit/' + branch + '/' + path;
+    edit.href = 'https://prose.io/#' + user + '/' + repo + '/edit/' + branch + '/' + path;
   }
 })();
