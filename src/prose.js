@@ -17,7 +17,7 @@
     }
 
     // Prose config file test
-    fetch(configFilePath).then(function (response) {
+    fetch(configFilePath).then(response => {
       if (response.ok) {
         // Display nav button
         const nav = document.querySelector('.hx_reponav');
@@ -33,11 +33,9 @@
           link.href = 'https://prose.io/#' + user + '/' + repo + '/';
         }
       } else {
-        throw new Error(`Request rejected with status ${response.status}`);
+        throw new Error('Can\'t find "_prose.yml" file');
       }
-    }).catch(function (err) {
-      //
-    });
+    }).catch(err => console.log(err.message));
 
     // Sha test
     if (/^[0-9a-f]{40}$/.test(branch)) {
