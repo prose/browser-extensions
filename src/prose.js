@@ -16,26 +16,29 @@
       return;
     }
 
-    // Prose config file test
-    fetch(configFilePath).then(response => {
-      if (response.ok) {
-        // Display nav button
-        const nav = document.querySelector('.hx_reponav');
-        const button = document.querySelector('#prose');
-        if (!button) {
-          const link = document.createElement('a');
-          link.id = 'prose';
-          link.innerHTML = '<span class="prose-icon"></span>Prose';
-          link.title = 'Open in Prose';
-          link.className = 'js-selected-navigation-item reponav-item';
-          link.rel = 'nofollow';
-          nav.appendChild(link);
-          link.href = 'https://prose.io/#' + user + '/' + repo + '/';
+    if (path === '') {
+      // Prose config file test
+      fetch(configFilePath).then(response => {
+        if (response.ok) {
+          console.log('"_prose.yml" file found');
+          // Display nav button
+          const nav = document.querySelector('.hx_reponav');
+          const button = document.querySelector('#prose');
+          if (!button) {
+            const link = document.createElement('a');
+            link.id = 'prose';
+            link.innerHTML = '<span class="prose-icon"></span>Prose';
+            link.title = 'Open in Prose';
+            link.className = 'js-selected-navigation-item reponav-item';
+            link.rel = 'nofollow';
+            nav.appendChild(link);
+            link.href = 'https://prose.io/#' + user + '/' + repo + '/';
+          }
+        } else {
+          throw new Error('Can\'t find "_prose.yml" file');
         }
-      } else {
-        throw new Error('Can\'t find "_prose.yml" file');
-      }
-    }).catch(err => console.log(err.message));
+      }).catch(err => console.log(err.message));
+    }
 
     // Sha test
     if (/^[0-9a-f]{40}$/.test(branch)) {
